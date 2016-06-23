@@ -1,7 +1,12 @@
+html {
+    font-family: 'Lato', sans-serif;
+}
 body {
-    background-color: rgb(231,232,233);
+    background-color: rgb(65,131,215);
 }
 
 .frontpage {
-    margin: 38vh auto;
+    margin: 45vh auto;
+    text-align: center;
+    color: white;
 }
