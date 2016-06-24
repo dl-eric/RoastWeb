@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     background-color: rgb(65, 131, 215);
     color: white;
+    padding-bottom: 70px;
 }
 
 #title {
