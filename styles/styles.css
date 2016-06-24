@@ -19,9 +19,9 @@ body {
 
 .vertical-center {
     /* https://jsfiddle.net/hashem/ut5sbqvz/ */
-    min-height: 100%;
+    min-height: 90%;
     /* Fallback for vh unit */
-    min-height: 100vh;
+    min-height: 90vh;
     /* You might also want to use
                         'height' property instead.
 
@@ -56,9 +56,14 @@ body {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
+    /* Vertically stack items */
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .footer {
     padding-bottom: 10px;
 }
-
