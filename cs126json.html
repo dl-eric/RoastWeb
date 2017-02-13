@@ -1,0 +1,117 @@
+{
+  "initialRoom": "MatthewsStreet",
+  "rooms": [
+    {
+      "name": "MatthewsStreet",
+      "description": "You are on Matthews, outside the Siebel Center",
+      "object": ["Computer"],
+      "directions": [
+        {
+          "direction": "East",
+          "room": "SiebelEntry"
+        }
+      ]
+    },
+    {
+      "name": "SiebelEntry",
+      "description": "You are in the west entry of Siebel Center.  You can see the elevator, the ACM office, and hallways to the north and east.",
+      "object": [""],
+      "directions": [
+        {
+          "direction": "West",
+          "room": "MatthewsStreet"
+        },
+        {
+          "direction": "Northeast",
+          "room": "AcmOffice"
+        },
+        {
+          "direction": "North",
+          "room": "SiebelNorthHallway"
+        },
+        {
+          "direction": "East",
+          "room": "SiebelEastHallway"
+        }
+      ]
+    },
+    {
+      "name": "AcmOffice",
+      "description": "You are in the ACM office.  There are lots of friendly ACM people.",
+      "object": ["A dank meme"],
+      "directions": [
+        {
+          "direction": "South",
+          "room": "SiebelEntry"
+        }
+      ]
+    },
+    {
+      "name": "SiebelNorthHallway",
+      "description": "You are in the north hallway.  You can see Siebel 1112 and the door toward NCSA.",
+      "object": ["Shoes", "Laces"],
+      "directions": [
+        {
+          "direction": "South",
+          "room": "SiebelEntry"
+        }, 
+        {
+          "direction": "NorthEast",
+          "room": "Siebel1112"
+        }
+      ]
+    },
+    {
+      "name": "Siebel1112",
+      "description": "You are in Siebel 1112.  There is space for two code reviews in this room.",
+      "object": ["Laptop", "Sad CS126 Student"],
+      "directions": [
+        {
+          "direction": "West",
+          "room": "SiebelNorthHallway"
+        }
+      ]
+    },
+    {
+      "name": "SiebelEastHallway",
+      "description": "You are in the east hallway.  You can see Einstein Bros' Bagels and a stairway.",
+      "object": [""],
+      "directions": [
+        {
+          "direction": "West",
+          "room": "SiebelEntry"
+        },
+        {
+          "direction": "South",
+          "room": "Siebel1314"
+        },
+        {
+          "direction": "Down",
+          "room": "SiebelBasement"
+        }
+      ]
+    },
+    {
+      "name": "Siebel1314",
+      "description": "You are in Siebel 1314.  There are happy CS 126 students doing a code review.",
+      "object": ["Unhappy CS126 Student"],
+      "directions": [
+        {
+          "direction": "North",
+          "room": "SiebelEastHallway"
+        }
+      ]
+    },
+    {
+      "name": "SiebelBasement",
+      "description": "You are in the basement of Siebel.  You see tables with students working and door to computer labs.",
+      "object": ["CS Troll"],
+      "directions": [
+        {
+          "direction": "Up",
+          "room": "SiebelEastHallway"
+        }
+      ]
+    }
+  ]
+}
